@@ -117,6 +117,28 @@
             50% { opacity: 1; }
             100% { opacity: 0.2; }
         }
+        /* RGB-Hover Effekt für den Senden-Button */
+button[type="submit"] {
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button[type="submit"]:hover {
+    color: white;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    animation: glowing 20s linear infinite;
+    border: none;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
     </style>
 </head>
 <body>
