@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAIA PRODUCTIONS | The Architect of Tomorrow</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --lapis: #001233;
+            --white: #ffffff;
+            --dark: #0a0a0a;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, var(--lapis), var(--dark));
+            width: 100%;
+        }
+
+        h1 {
+            color: var(--gold);
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        /* Das Bento-Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .card h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.7;
+        }
+
+        .status-badge {
+            font-size: 0.7rem;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 3-10px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* Spezielle Animation für "Hier entsteht was Großes" */
+        .loading-text {
+            color: var(--gold);
+            font-weight: bold;
+            margin-top: 50px;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GAIA PRODUCTIONS</h1>
+    <div class="subtitle">One Vision. Eight Worlds.</div>
+    <div class="loading-text">>>> SYSTEM BOOTING: SOMETHING BIG IS COMING <<<</div>
+</header>
+
+<div class="grid-container">
+    <div class="card">
+        <div class="status-badge">MANAGEMENT</div>
+        <h3>Gaia Productions</h3>
+        <p>The Architect of Tomorrow. Das strategische Gehirn hinter dem Imperium.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">STUDIO</div>
+        <h3>Gaia Studios</h3>
+        <p>Where Legends are Sculpted. Das Zuhause unserer Artists.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">INNOVATION</div>
+        <h3>Gaia Labs</h3>
+        <p>Decoding the Future of Sound. Trend-Analyse & Artist Creation.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">LIFESTYLE</div>
+        <h3>Gaia Athletics</h3>
+        <p>Peak Performance. Godlike Strength. Deine High-End Sportbrand.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">ARTIST</div>
+        <h3>Authentic</h3>
+        <p>Echt. Roh. Unaufhaltsam. Modern Pop aus Wien.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">ARTIST</div>
+        <h3>Beautiful Mind</h3>
+        <p>Visualize your Victory. Deep Visionary Soundtracks.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">COMMUNITY</div>
+        <h3>Gaia Support</h3>
+        <p>Empowering Souls. Hilfe, Spenden & Community Projekte.</p>
+    </div>
+
+    <div class="card">
+        <div class="status-badge">ESCAPE</div>
+        <h3>Sunshine Paradies</h3>
+        <p>Your Escape to Excellence. Das Karibik-Retreat.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 GAIA PRODUCTIONS LLC | HAWAII - CALIFORNIA - EUROPE
+</footer>
+
+</body>
+</html>
